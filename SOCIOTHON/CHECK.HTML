@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Categories</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://source.unsplash.com/1600x900/?nature'); /* Replace with your background */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 80%; /* Reduced width to leave more space */
+            height: 75vh; /* Reduced height */
+            padding: 40px; /* Reduced padding */
+            border: 3px solid #b45fff;
+            border-radius: 15px;
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px; /* Reduced gap for compact look */
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(7px);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .box {
+            width: 180px; /* Reduced size */
+            height: 180px; /* Reduced size */
+            background: #e3c7ab;
+            padding: 15px; /* Reduced padding */
+            font-weight: bold;
+            font-size: 1em;
+            border-radius: 10px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.8); 
+            background-size: contain; /* Ensures full image fits */
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        .box:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 15px 35px rgba(0, 0, 0, 1);
+        }
+
+        .box1 { background-image: url('images/household_services.jpg'); }
+        .box2 { background-image: url('images/repair_maintenance.jpg'); }
+        .box3 { background-image: url('images/education_tutoring.jpg'); }
+        .box4 { background-image: url('images/sales_delivery.jpg'); }
+        .box5 { background-image: url('images/tailoring_fashion.jpg'); }
+        .box6 { background-image: url('images/entertainment_event.jpg'); }
+        .box7 { background-image: url('images/agriculture_farming.jpg'); }
+        .box8 { background-image: url('images/retail_sale.jpg'); }
+        .box9 { background-image: url('images/fashion_personal_grooming.jpg'); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">HOUSE-HOLD SERVICES</div>
+        <div class="box box2">REPAIR AND MAINTENANCE</div>
+        <div class="box box3">EDUCATION AND TUTORING</div>
+        <div class="box box4">SALES AND DELIVERY</div>
+        <div class="box box5">TAILORING AND FASHION</div>
+        <div class="box box6">ENTERTAINMENT AND EVENT</div>
+        <div class="box box7">AGRICULTURE AND FARMING</div>
+        <div class="box box8">RETAIL AND SALE</div>
+        <div class="box box9">FASHION AND PERSONAL GROOMING</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Categories</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://source.unsplash.com/1600x900/?beach'); 
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            width: 90%; 
+            height: 90vh; 
+            padding: 80px; 
+            border: 3px solid #b45fff;
+            border-radius: 15px;
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(7px);
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7);
+        }
+        .box1, .box2, .box3, .box4, .box5, .box6, .box7, .box8, .box9 {
+            background: #e3c7ab;
+            padding: 40px;
+            font-weight: bold;
+            font-size: 1.5em;
+            border-radius: 12px;
+            text-align: center;
+            -webkit-text-stroke-width: 0%;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            box-shadow: 0px 20px 40px rgba(0, 0, 0, 1); 
+        }
+        .box1:hover, .box2:hover, .box3:hover, .box4:hover, .box5:hover, .box6:hover, .box7:hover, .box8:hover, .box9:hover {
+            transform: scale(1.15);
+            box-shadow: 0px 25px 50px rgba(0, 0, 0, 1);
+        }
+        .box1:active, .box2:active, .box3:active, .box4:active, .box5:active, .box6:active, .box7:active, .box8:active, .box9:active {
+            transform: scale(1.3);
+            box-shadow: 0px 30px 60px rgba(0, 0, 0, 1);
+        }
+        .box1 {
+            background-image: url('HOUSE.jpg');
+            background-size: cover;
+        }
+        .box2{
+            background-image: url('REPAIR\ AND\ MAINTAINANCE.jpg');
+            background-size: cover;
+            -webkit-text-fill-color: navy;
+        }
+        .box3{
+            background-image: url('EDUCATION\ AND\ TUTORING.jpg');
+            background-size: cover;
+        }
+        .box4{
+            background-image: url('SALES\ AND\ DELIVERY.jpg');
+            background-size: cover;
+        }
+        .box5{
+            background-image: url('FASHION\ AND\ TAILORING.jpg');
+            background-size: cover;
+            -webkit-text-fill-color: azure;
+        }
+        .box6{
+            background-image: url('ENTERTAINMENT\ AND\ EVENT.jpg');
+            background-size: cover;
+            -webkit-text-fill-color: azure;
+        }
+        .box7{
+            background-image: url('AGRICULTURE\ AND\ FARMING.jpg');
+            background-size: cover;
+        }
+        .box8{
+            background-image: url('SALE\ AND\ RETAIL.jpg');
+            background-size: cover;
+        }
+        .box9{
+            background-image: url('FASHION\ AND\ PERSONAL\ GROOMING.jpg');
+            background-size: cover;
+            background-origin: content-box;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">HOUSE-HOLD SERVICES</div>
+        <div class="box2">REPAIR AND MAINTAINANCE</div>
+        <div class="box3">EDUCATION AND TUTORING</div>
+        <div class="box4">SALES AND DELIVERY</div>
+        <div class="box5">TAILORING AND FASHION</div>
+        <div class="box6">ENTERTAINMENT AND EVENT</div>
+        <div class="box7">AGRICULTURE AND FARMING</div>
+        <div class="box8">RETAIL AND SALE</div>
+        <div class="box9">FASHION AND PERSONAL GROOMING</div>
+    </div>
+</body>
+</html>
